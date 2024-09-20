@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchSmoothies = async () => {
       const { data, error } = await supabase
-        .from('recipes')
+        .from('smoothies')
         .select()
       
       if (error) {
